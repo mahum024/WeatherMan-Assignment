@@ -9,7 +9,6 @@ module CalculateTempratureModule
     highest_temprature = highest.max
     highest_temprature_index = highest.index(highest_temprature)
     date_of_highest_temprature = date[highest_temprature_index]
-
     print_max_temp(highest_temprature, date_of_highest_temprature)
   end
 
@@ -26,7 +25,6 @@ module CalculateTempratureModule
     highest_humid = humid.max
     highest_humid_index = highest_humid
     date_of_highest_humid = date[highest_humid_index]
-
     print_max_humid(highest_humid, date_of_highest_humid)
   end
 
