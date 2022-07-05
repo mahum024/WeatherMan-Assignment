@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 module DisplayInfo
   def print_max_temp_avg(highest_temp_avg_p)
     puts "Highest Average: #{highest_temp_avg_p}C"
