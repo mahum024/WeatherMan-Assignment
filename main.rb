@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Weatherman
-
   require_relative 'file_read'
   require_relative 'horizontal_charts'
   require_relative 'calculate_tempratures'
@@ -21,10 +20,10 @@ class Weatherman
   end
 end
 
-if ARGV.length < 3
+if ARGV.length < 3 || ARGV.length > 3
   puts 'Please Pass correct number of arguments '
   exit
-else
+elsif ARGV.length == 3
   file_read_arguments = [ARGV[0], ARGV[1], ARGV[2]]
 
   case ARGV[0]
